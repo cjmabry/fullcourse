@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+
+  <div class="jumbotron text-center">
+
+    <h1>The Open MOOC Curriculum</h1>
+
+    <p>Complete online degree programs for any field, 100% free.</p>
+
+    <button class="btn btn-primary">Learn More</button>
+
+  </div>
+
+  <h2>Browse By Curriculum</h2>
+  <ul>
+    <li><a href="{{ url_for('comp_sci')}}">Computer Science</a></li>
+  </ul>
+
+{% endblock %}

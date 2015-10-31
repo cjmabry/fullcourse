@@ -1,0 +1,60 @@
+body, html {
+  height: 100%;
+}
+
+ul.course_list li {
+  height: 50px;
+  line-height: 30px;
+}
+
+ul.course_list .course_title {
+  font-weight: bolder;
+}
+
+ul.course_list .provider {
+  font-size: 0.8em;
+}
+
+ul.course_list .voting {
+  position: relative;
+  height: 30px;
+  display: inline-block;
+  background: red;
+  margin: auto;
+}
+
+ul.course_list .upvote, ul.course_list .downvote {
+  position: absolute;
+  right:15px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+ul.course_list .upvote:hover, ul.course_list .downvote:hover {
+}
+
+ul.course_list .upvote {
+  top:0;
+}
+
+ul.course_list .downvote {
+  top:16px;
+}
+
+ul.course_list .discuss {
+  line-height: 30px;
+  float: right;
+  cursor: pointer;
+}
+
+/*footer*/
+footer {
+  position: absolute;
+  width: 100%;
+  bottom:0;
+  right:0;
+  left:0;
+  height: 30px;
+  line-height: 30px;
+  background: #f5f5f5;
+}
