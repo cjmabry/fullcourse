@@ -1,4 +1,4 @@
-# The-Open-MOOC-Curriculum
+# The Open MOOC Curriculum
 Clever name coming soon.
 
 ###What?
