@@ -8,4 +8,4 @@ def index():
 
 @app.route('/comp-sci')
 def comp_sci():
-    return render_template('comp-sci.html')
+    return render_template('comp-sci-example.html')
