@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="jumbotron">
+
+  <h1>{{ course }}</h1>
+
+  <p>{{ description }}</p>
+
+  <p>Course by <a href="{{ provider_link }}">{{provider}}</a>.</p>
+
+</div>
+
+{% endblock %}

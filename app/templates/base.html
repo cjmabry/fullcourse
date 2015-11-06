@@ -30,14 +30,13 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-left">
-            <li><a href="{{url_for('index')}}">Home</a></li>
             <li><a href="#">About</a></li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Browse by Field <span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Majors <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="{{url_for('comp_sci')}}">Computer Science</a></li>
+                <li><a href="{{url_for('major', major="computer-science")}}">Computer Science</a></li>
                 <li role="separator" class="divider"></li>
-                <li><a href="#">Add a Field</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-plus"></span> Add a Major</a></li>
               </ul>
             </li>
           </ul>

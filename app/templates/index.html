@@ -1,19 +1,114 @@
 {% extends "base.html" %}
 {% block content %}
 
-  <div class="jumbotron text-center">
+  <div class="jumbotron text-center" id="cover">
 
     <h1>The Open MOOC Curriculum</h1>
 
     <p>Complete online degree programs for any field, 100% free.</p>
 
-    <button class="btn btn-primary">Learn More</button>
+    <button class="btn btn-primary">Start Learning</button>
 
   </div>
 
-  <h2>Browse By Field</h2>
-  <ul>
-    <li><a href="{{ url_for('comp_sci')}}">Computer Science</a></li>
-  </ul>
+
+  <div class="row" id="popular">
+    <h2 class="text-center">Popular Curriculums</h2>
+
+    <div class="row text-center">
+      <div class="col-sm-6 col-md-4">
+        <a class="thumbnail" href="{{url_for('major', major="computer-science")}}">
+          <img src="http://placehold.it/400x400">
+          <p>Computer Science</p>
+        </a>
+      </div>
+
+      <div class="col-sm-6 col-md-4">
+        <a class="thumbnail" href="{{url_for('major', major="computer-science")}}">
+          <img src="http://placehold.it/400x400">
+          <p>Computer Science</p>
+        </a>
+      </div>
+
+      <div class="col-sm-6 col-md-4">
+        <a class="thumbnail" href="{{url_for('major', major="computer-science")}}">
+          <img src="http://placehold.it/400x400">
+          <p>Computer Science</p>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div id="all">
+
+    <h2 class="text-center">All Curriculums</h2>
+
+    <div class="row" id="major_search">
+      <div class="col-sm-12 col-lg-4 col-lg-offset-4">
+        <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search for...">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button">Go!</button>
+        </span>
+        </div><!-- /input-group -->
+      </div><!-- /.col-lg-6 -->
+    </div>
+
+    <div class="col-sm-12 col-lg-6 text-center">
+      <ul>
+        <li>Parent Subject</li>
+          <ul>
+            <li>Child Subject</li>
+            <li>Child Subject</li>
+            <li>Child Subject</li>
+            <li>Child Subject</li>
+            <li>Child Subject</li>
+            <li>Child Subject</li>
+            <li>Child Subject</li>
+          </ul>
+        <li>Parent Subject</li>
+          <ul>
+            <li>Child Subject</li>
+            <ul>
+              <li>Child Subject</li>
+              <li>Child Subject</li>
+              <li>Child Subject</li>
+              <li>Child Subject</li>
+              <li>Child Subject</li>
+            </ul>
+          </ul>
+      </ul>
+    </div>
+
+    <div class="col-sm-12 col-lg-6 text-center">
+      <ul>
+        <li>Parent Subject</li>
+          <ul>
+            <li>Child Subject</li>
+            <li>Child Subject</li>
+            <li>Child Subject</li>
+            <li>Child Subject</li>
+            <li>Child Subject</li>
+            <li>Child Subject</li>
+            <li>Child Subject</li>
+          </ul>
+        <li>Parent Subject</li>
+          <ul>
+            <li>Child Subject</li>
+            <ul>
+              <li>Child Subject</li>
+            </ul>
+          </ul>
+        <li>Parent Subject</li>
+          <ul>
+            <li>Child Subject</li>
+            <li>Child Subject</li>
+            <li>Child Subject</li>
+
+          </ul>
+      </ul>
+    </div>
+
+  </div>
 
 {% endblock %}
